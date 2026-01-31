@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import axios from "../axiosWithJwt";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { toast } from "sonner";
 import { setCart } from "@/redux/productSlice";
 
