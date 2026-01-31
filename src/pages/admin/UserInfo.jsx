@@ -87,14 +87,7 @@ const UserInfo = () => {
         formData.append("image", file);
       }
 
-      const res = await axios.put(
-        `/user/admin/update-user/${id}`,
-        formData,
-        {
-          transformRequest: (data) => data,
-        }
-      );
-
+      const res = await axios.put(`/user/admin/update-user/${id}`,formData);
 
       if (res.data.success) {
         toast.success(res.data.message);
