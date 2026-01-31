@@ -2,7 +2,7 @@ import axios from "../../axiosWithJwt";
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { toast } from 'sonner';
-import { CardHeader, CardContent, CardTitle, Card } from '@/components/ui/card';
+import { CardHeader, CardContent, CardTitle, Card } from '@/components/ui/Card';
 import { ResponsiveContainer } from 'recharts';
 import { Tooltip } from 'recharts';
 import { Area } from 'recharts';
