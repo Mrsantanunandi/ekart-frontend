@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "../../axiosWithJwt";
 import { setProduct } from "@/redux/productSlice";
-import { Input } from "@/components/ui/input";
+import { Input } from "@/components/ui/Input";
 import { Edit, Search, Trash2 } from "lucide-react";
 import {
   Select,
@@ -10,10 +10,10 @@ import {
   SelectValue,
   SelectContent,
   SelectItem,
-} from "@/components/ui/select";
-import { Card } from "@/components/ui/card";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
+} from "@/components/ui/Select";
+import { Card } from "@/components/ui/Card";
+import { Textarea } from "@/components/ui/Textarea";
+import { Button } from "@/components/ui/Button";
 import {
   Dialog,
   DialogClose,
@@ -23,8 +23,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { Label } from "@/components/ui/label";
+} from "@/components/ui/Dialog";
+import { Label } from "@/components/ui/Label";
 import ImageUpload from "@/components/ImageUpload";
 import { toast } from "sonner";
 import {
@@ -37,7 +37,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
+} from "@/components/ui/Alert-dialog"
 
 
 const AdminProducts = () => {
