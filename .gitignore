@@ -12,6 +12,21 @@ dist
 dist-ssr
 *.local
 
+
+# Logs
+logs
+*.log
+... (keep your other logs here)
+
+node_modules
+dist
+dist-ssr
+*.local
+.env        <-- Add this line!
+.env.* <-- Add this to catch any other variations
+
+# Editor directories and files
+... (keep the rest)
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
