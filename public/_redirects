@@ -1,2 +1,5 @@
-/* /index.html   200
+# 1. THE PROXY RULE MUST BE FIRST
 /api/* http://ekart-backend-env.eba-7nmyz7pu.eu-north-1.elasticbeanstalk.com/:splat  200
+
+# 2. THE SPA ROUTING RULE MUST BE LAST
+/* /index.html  200
