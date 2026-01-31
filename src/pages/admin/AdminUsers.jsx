@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "../../axiosWithJwt";
 import { toast } from "sonner";
 import { Search } from "lucide-react";
-import { Input } from "@/components/ui/input";
+import { Input } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 import { Edit, Eye } from "lucide-react";
 import UserLogo from "../../assets/UserLogo.jpg";
