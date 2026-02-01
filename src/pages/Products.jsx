@@ -25,7 +25,7 @@ export default function Products() {
       try {
         setLoading(true);
         const res = await axios.get(
-          `${import.meta.env.VITE_URL}/product/allProducts`
+          "/product/allProducts"
         );
         dispatch(setProduct(res.data.data || [])); // ✅ STORE IN REDUX
       } catch (err) {
