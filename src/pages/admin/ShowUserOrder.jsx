@@ -13,7 +13,7 @@ const ShowUserOrder = () => {
     try {
         const token = localStorage.getItem("token");
         const res = await axios.get(
-            `${import.meta.env.VITE_URL}/user-order/${params.userId}`,
+            `/user-order/${params.userId}`,
             {
                 headers: {
                     Authorization: `Bearer ${token}`,
