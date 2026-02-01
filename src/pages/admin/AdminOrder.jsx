@@ -11,7 +11,7 @@ const AdminOrder = () => {
     const fetchOrders = async () => {
       try {
         const { data } = await axios.get(
-          `${import.meta.env.VITE_URL}/allUser-order`,
+          "/allUser-order",
           {
             headers: { Authorization: `Bearer ${accessToken}` },
           }
