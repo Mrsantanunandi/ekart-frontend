@@ -1,24 +1,23 @@
----
 
 # 🛒 Ekart – Full Stack E-Commerce Application
 
 ## 🔗 Live Links
 
-Frontend (Vercel): 
-[https://ekart-frontend-kappa.vercel.app/](https://ekart-frontend-kappa.vercel.app/)
+**Frontend (Vercel)**
+👉 [https://ekart-frontend-kappa.vercel.app/](https://ekart-frontend-kappa.vercel.app/)
 
 **Backend API (AWS – Elastic Beanstalk)**
-Successfully deployed and running
+✅ Successfully deployed and running
 
 ---
 
 ## 📌 About the Project
 
-Ekart is a production-ready full-stack e-commerce web application built using React for the frontend and Spring Boot for the backend.
+Ekart is a **production-ready full-stack e-commerce web application** built using **React** for the frontend and **Spring Boot** for the backend.
 
-The application follows industry-level security practices and supports role-based access control, secure online payments, email verification, and a complete admin analytics dashboard.
+The application follows **industry-level security practices** and supports **role-based access control**, **secure online payments**, **email verification**, and a **complete admin analytics dashboard**.
 
-This project demonstrates real-world implementation of authentication, authorization, cloud image storage, payment gateways, database management, and cloud deployment on AWS.
+This project demonstrates real-world implementation of **authentication**, **authorization**, **cloud image storage**, **payment gateways**, **database management**, and **cloud deployment on AWS**.
 
 ---
 
@@ -75,8 +74,6 @@ This project demonstrates real-world implementation of authentication, authoriza
 * Secure checkout using Razorpay
 * View order history
 * Track personal orders
-
----
 
 ### Admin Features
 
@@ -226,12 +223,14 @@ src/
 
 ## 👨‍🎓 Author
 
-Santanu Nandi
+**Santanu Nandi**
 B.Tech in Computer Science and Engineering
 
 ---
 
 ## ⭐ Support
 
-If you find this project helpful or impressive, please give the repository a star on GitHub.
+If you find this project helpful or impressive, please give the repository a ⭐ on GitHub.
 Your support is appreciated and motivating.
+
+---
