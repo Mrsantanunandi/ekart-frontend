@@ -20,7 +20,7 @@ const AdminSales = () => {
   const token = localStorage.getItem("token");
   const adminPanel = async () => {
     try {
-      const res = await axios.get(`${import.meta.env.VITE_URL}/admin-panel`,
+      const res = await axios.get("/admin-panel",
         {
           headers: {
             Authorization: `Bearer ${token}`
