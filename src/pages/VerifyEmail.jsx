@@ -15,7 +15,7 @@ export default function VerifyEmail() {
   const verifyEmail = async () => {
     try {
       const res = await axios.get(
-        `${import.meta.env.VITE_URL}/user/verify?token=${token}`
+        `/user/verify?token=${token}`
       )
 
       setStatus(res.data) // backend sends string
