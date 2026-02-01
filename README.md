@@ -4,7 +4,7 @@
 
 ## 🔗 Live Links
 
-**Frontend (Vercel)**
+Frontend (Vercel): 
 [https://ekart-frontend-kappa.vercel.app/](https://ekart-frontend-kappa.vercel.app/)
 
 **Backend API (AWS – Elastic Beanstalk)**
