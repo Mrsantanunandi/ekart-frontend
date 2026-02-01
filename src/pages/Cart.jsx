@@ -18,7 +18,7 @@ export default function Cart() {
   const handleUpdateQuantity = async (cartItemId, type) => {
     try {
       const res = await axios.put(
-        `${import.meta.env.VITE_URL}/cart/update-quantity/${cartItemId}/${type}`,
+        `/cart/update-quantity/${cartItemId}/${type}`,
         {},
         {
           headers: {
@@ -31,7 +31,7 @@ export default function Cart() {
         toast.success("Quantity updated");
 
         const res1 = await axios.get(
-          `${import.meta.env.VITE_URL}/cart/cartDetails`,
+          "/cart/cartDetails",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -51,7 +51,7 @@ export default function Cart() {
   const handleRemoveItem = async (cartItemId) => {
     try {
       const res = await axios.delete(
-        `${import.meta.env.VITE_URL}/cart/remove/${cartItemId}`,
+        `/cart/remove/${cartItemId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -63,7 +63,7 @@ export default function Cart() {
         toast.success("Item removed");
 
         const res1 = await axios.get(
-          `${import.meta.env.VITE_URL}/cart/cartDetails`,
+          "/cart/cartDetails",
           {
             headers: {
               Authorization: `Bearer ${token}`,
