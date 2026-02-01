@@ -42,7 +42,7 @@ export default function Login() {
 
     try {
       const res = await axios.post(
-        `${import.meta.env.VITE_URL}/user/login`,
+        "/user/login",
         formData,
         {
           headers: {
