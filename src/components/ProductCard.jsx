@@ -20,7 +20,7 @@ export default function ProductCard({ product, loading }) {
                 : {}
 
             const res = await axios.post(
-                `${import.meta.env.VITE_URL}/cart/add/${productId}`,
+                `/cart/add/${productId}`,
                 {},
                 { headers }
             )
@@ -29,7 +29,7 @@ export default function ProductCard({ product, loading }) {
                 toast.success("Product added to Cart")
 
                 const res1 = await axios.get(
-                    `${import.meta.env.VITE_URL}/cart/cartDetails`,
+                    "/cart/cartDetails",
                     { headers }
                 )
 
