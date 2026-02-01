@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { toast } from "sonner";
 import { setUser } from "@/redux/userSlice";
-import Santanu from "../assets/Santanu.jpg";
+import UserLogo from "../assets/UserLogo.jpg";
 import axios from "../axiosWithJwt";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
@@ -138,7 +138,7 @@ export default function Profile() {
                   {/* Profile Picture */}
                   <div className="flex flex-col items-center">
                     <img
-                      src={updateUser?.profilePic || Santanu}
+                      src={updateUser?.profilePic || UserLogo}
                       alt="profile"
                       className="w-32 h-32 rounded-full object-cover border-4 border-pink-800"
                     />
