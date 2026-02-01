@@ -1,9 +1,11 @@
+---
+
 # 🛒 Ekart – Full Stack E-Commerce Application
 
 ## 🔗 Live Links
 
-**Frontend (Netlify)**
-[https://frolicking-starburst-33437b.netlify.app/](https://frolicking-starburst-33437b.netlify.app/)
+**Frontend (Vercel)**
+[https://ekart-frontend-kappa.vercel.app/](https://ekart-frontend-kappa.vercel.app/)
 
 **Backend API (AWS – Elastic Beanstalk)**
 Successfully deployed and running
@@ -30,7 +32,7 @@ This project demonstrates real-world implementation of authentication, authoriza
 * Tailwind CSS
 * ShadCN UI
 * Chart libraries for admin analytics
-* Netlify for deployment
+* Vercel for deployment
 
 ### Backend
 
@@ -161,10 +163,10 @@ razorpay.secret=your_razorpay_secret
 
 ### Frontend
 
-* Platform: Netlify
+* Platform: Vercel
 * Build command: npm run build
-* Publish directory: dist
-* Environment variables configured in Netlify dashboard
+* Output directory: dist
+* Environment variables configured in Vercel dashboard
 
 ### Backend
 
@@ -217,7 +219,7 @@ src/
 * Cloudinary image handling
 * Admin dashboard analytics
 * PostgreSQL database management
-* AWS and Netlify deployment
+* AWS and Vercel deployment
 * Production-grade security practices
 
 ---
@@ -233,4 +235,3 @@ B.Tech in Computer Science and Engineering
 
 If you find this project helpful or impressive, please give the repository a star on GitHub.
 Your support is appreciated and motivating.
-
