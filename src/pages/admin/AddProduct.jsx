@@ -87,7 +87,7 @@ const AddProduct = () => {
       });
 
       const res = await axios.post(
-        `${import.meta.env.VITE_URL}/product/addProduct`,
+        "/product/addProduct",
         formData,
         {
           headers: {
