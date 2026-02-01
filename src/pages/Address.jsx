@@ -107,7 +107,7 @@ const Address = () => {
     try {
       // 🔹 CREATE ORDER
       const orderRes = await axios.post(
-        `${import.meta.env.VITE_URL}/payment/create-order`,
+        "/payment/create-order",
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -137,7 +137,7 @@ const Address = () => {
           try {
             // 🔹 VERIFY PAYMENT
             const verifyRes = await axios.post(
-              `${import.meta.env.VITE_URL}/payment/verify`,
+              "/payment/verify",
               {
                 razorpayOrderId: response.razorpay_order_id,
                 razorpayPaymentId: response.razorpay_payment_id,
