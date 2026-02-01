@@ -19,7 +19,7 @@ const SingleProduct = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`${import.meta.env.VITE_URL}/product/${id}`);
+        const res = await axios.get(`/product/${id}`);
         setProduct(res.data.data);
         setSelectedImg(res.data.data.productImg?.[0]?.url);
       } catch (err) {
@@ -43,7 +43,7 @@ const SingleProduct = () => {
     try {
       // Add product to cart
       const res = await axios.post(
-        `${import.meta.env.VITE_URL}/cart/add/${product.id}?qty=${quantity}`,
+        `/cart/add/${product.id}?qty=${quantity}`,
         {},
         {
           headers: {
@@ -58,7 +58,7 @@ const SingleProduct = () => {
         // Fetch updated cart safely
         try {
           const cartRes = await axios.get(
-            `${import.meta.env.VITE_URL}/cart/cartDetails`,
+            "/cart/cartDetails",
             {
               headers: {
                 Authorization: `Bearer ${token}`,
