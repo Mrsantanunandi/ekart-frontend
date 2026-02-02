@@ -187,32 +187,36 @@ const Address = () => {
           <>
             <div>
               <Label>Full Name</Label>
-              <Input name="fullName" value={formData.fullName} onChange={handleChange} />
+              <Input name="fullName"  placeholder="Enter your full name" value={formData.fullName} onChange={handleChange} />
             </div>
 
             <div>
               <Label>Phone</Label>
-              <Input name="phone" value={formData.phone} onChange={handleChange} />
+              <Input name="phone" value={formData.phone} placeholder="10-digit mobile number" onChange={handleChange} />
             </div>
 
             <div>
               <Label>Email</Label>
-              <Input name="email" value={formData.email} onChange={handleChange} />
+              <Input name="email" value={formData.email} placeholder="example@email.com" onChange={handleChange} />
             </div>
 
             <div>
               <Label>Address</Label>
-              <Input name="address" value={formData.address} onChange={handleChange} />
+              <Input name="address" value={formData.address} placeholder="House no, Street, Area" onChange={handleChange} />
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <Input name="city" value={formData.city} onChange={handleChange} />
-              <Input name="state" value={formData.state} onChange={handleChange} />
+              <Label>City</Label>
+              <Input name="city" value={formData.city} placeholder="City" onChange={handleChange} />
+              <Label>State</Label>
+              <Input name="state" value={formData.state} placeholder="State" onChange={handleChange} />
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <Input name="zipCode" value={formData.zipCode} onChange={handleChange} />
-              <Input name="country" value={formData.country} onChange={handleChange} />
+              <Label>PinCode</Label>
+              <Input name="zipCode" value={formData.zipCode} placeholder="6-digit PIN code" onChange={handleChange} />
+              <Label>Country</Label>
+              <Input name="country" value={formData.country} placeholder="India" onChange={handleChange} />
             </div>
 
             <Button onClick={handleSave} className="w-full bg-blue-900">
