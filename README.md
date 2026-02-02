@@ -1,13 +1,22 @@
-
 # 🛒 Ekart – Full Stack E-Commerce Application
+
+![AWS Elastic Beanstalk](https://img.shields.io/badge/Backend-AWS%20Elastic%20Beanstalk-orange?logo=amazon-aws\&logoColor=white)
+![Railway](https://img.shields.io/badge/Backend-Railway-purple?logo=railway\&logoColor=white)
+![Vercel](https://img.shields.io/badge/Frontend-Vercel-black?logo=vercel\&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-Backend-brightgreen?logo=springboot)
+![React](https://img.shields.io/badge/React-Frontend-blue?logo=react)
+
+---
 
 ## 🔗 Live Links
 
 **Frontend (Vercel)**
 👉 [https://ekart-frontend-kappa.vercel.app/](https://ekart-frontend-kappa.vercel.app/)
 
-**Backend API (AWS – Elastic Beanstalk)**
-✅ Successfully deployed and running
+**Backend API**
+✅ Deployed on **AWS Elastic Beanstalk**
+✅ Also deployed on **Railway**
+🔄 **Currently connected and running via Railway backend**
 
 ---
 
@@ -17,7 +26,7 @@ Ekart is a **production-ready full-stack e-commerce web application** built usin
 
 The application follows **industry-level security practices** and supports **role-based access control**, **secure online payments**, **email verification**, and a **complete admin analytics dashboard**.
 
-This project demonstrates real-world implementation of **authentication**, **authorization**, **cloud image storage**, **payment gateways**, **database management**, and **cloud deployment on AWS**.
+This project demonstrates real-world implementation of **authentication**, **authorization**, **cloud image storage**, **payment gateways**, **database management**, and **multi-cloud backend deployment using AWS and Railway**.
 
 ---
 
@@ -42,7 +51,8 @@ This project demonstrates real-world implementation of **authentication**, **aut
 * PostgreSQL Database
 * Razorpay Payment Gateway
 * Cloudinary Image Storage
-* AWS Elastic Beanstalk deployment
+* **AWS Elastic Beanstalk**
+* **Railway (currently active backend)**
 
 ---
 
@@ -61,7 +71,7 @@ This project demonstrates real-world implementation of **authentication**, **aut
 
 ## ✨ Application Features
 
-### User Features
+### 👤 User Features
 
 * User registration with email verification
 * Secure login using JWT
@@ -75,7 +85,7 @@ This project demonstrates real-world implementation of **authentication**, **aut
 * View order history
 * Track personal orders
 
-### Admin Features
+### 🛠 Admin Features
 
 * Admin authentication and authorization
 * Admin dashboard with analytics
@@ -85,7 +95,7 @@ This project demonstrates real-world implementation of **authentication**, **aut
 * Update existing product details
 * Delete products
 * Upload product images using Cloudinary
-* View all user profiles and details
+* View all user profiles
 * Manage and view all user orders
 
 ---
@@ -140,7 +150,7 @@ VITE_RAZORPAY_KEY=your_razorpay_key
 ### Backend (application.properties)
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/ekart
+spring.datasource.url=jdbc:postgresql://<host>:5432/ekart
 spring.datasource.username=your_db_username
 spring.datasource.password=your_db_password
 
@@ -167,11 +177,15 @@ razorpay.secret=your_razorpay_secret
 
 ### Backend
 
-* Platform: AWS Elastic Beanstalk
+* Platforms:
+
+  * AWS Elastic Beanstalk
+  * Railway
 * Spring Boot JAR deployment
 * PostgreSQL database
-* Environment variables configured on AWS
-* Fully live and production ready
+* Environment variables configured in cloud dashboards
+* **Currently active backend: Railway**
+* Fully live and production-ready
 
 ---
 
@@ -216,7 +230,7 @@ src/
 * Cloudinary image handling
 * Admin dashboard analytics
 * PostgreSQL database management
-* AWS and Vercel deployment
+* **Multi-cloud backend deployment (AWS + Railway)**
 * Production-grade security practices
 
 ---
@@ -231,6 +245,4 @@ B.Tech in Computer Science and Engineering
 ## ⭐ Support
 
 If you find this project helpful or impressive, please give the repository a ⭐ on GitHub.
-Your support is appreciated and motivating.
-
----
+Your support is highly appreciated and motivating 🚀
